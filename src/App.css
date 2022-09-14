@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+html,
+body,
+header,
+#intro {
+  height: 100vh;
+}
+.t-bold {
+  font-weight: bold;
+}
+.text-orange {
+  color: orange;
+}
+.hero-intro-bg {
+  background-color: #4f1066;
+}
+body {
+  overflow-x: hidden;
+  background: #4f1066;
+  /* #4f1066 #551d6b*/
+  color: #fff;
+}
+p {
+  font-size: 18px;
+}
+.btn:hover {
+  cursor: pointer !important;
+}
+.btn-danger:hover {
+  background-color: #c90a1b !important;
+}
+.btn-outline-light {
+  color: #333;
+}
+.btn-outline-light:hover {
+  background-color: #ff3547 !important;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  background-color: #4f1066;
+}
+.loader {
+  display: inline-block;
+  position: relative;
+}
+header {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+}
+header video,
+header .anim-img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -64%);
+  object-fit: cover;
+}
+.animation-container {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: #4f1066;
+  /* 551d6b 4f1066 */
+  z-index: 0;
+  opacity: 0.7;
+}
+.header-overlap {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: orange;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.8;
+}
+header .container {
+  position: relative;
+  min-height: 74px;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.25;
+  z-index: 1;
+}
+#intro {
+  background: url("../public/img/header_bg.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  /* -webkit-box-shadow: 0 0px 10px 0 rgb(255 255 255 / 50%);
+  box-shadow: 0 0px 10px 0 rgb(255 255 255 / 50%); */
+}
+.navbar .nav-link:hover {
+  color: #551d6b;
+}
+.navbar #button {
+  font-size: 14px;
+  padding: 10px 35px;
+}
+.mask .container-introduction h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 95px;
+  font-family: "Creepster", cursive;
+}
+.mask .container-introduction h2 {
+  color: #fff;
+  font-weight: 700;
+}
+main .community-token .subtitle {
+  color: #0b0b45;
+}
+main .community-token h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+main .community-token .btn,
+main .community-units .btn {
+  background-color: #0b0b45;
+  color: white;
+}
+main .community-token .btn:hover,
+main .community-units .btn:hover {
+  background-color: #000;
+}
+main .community-token video {
+  width: 100%;
+  height: 100%;
+}
+main #schematics {
+  background-color: #000;
+  height: 60vh;
+}
+main #schematics .subtitle {
+  color: #0b0b45;
+}
+main #schematics h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+}
+main #schematics ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main #schematics ul li {
+  margin: 10px auto;
+  font-size: 18px;
+}
+main #schematics ul li i {
+  color: #00008b;
+}
+main .community-units .subtitle {
+  color: #0b0b45;
+}
+main .community-units h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+main .community-units ul {
+  font-weight: 800;
+}
+main .community-units ul li {
+  margin: 10px auto;
+  font-size: 18px;
+}
+main .community-units video {
+  width: 100%;
+  height: 100%;
+}
+main #download {
+  text-align: center;
+}
+main #download .subtitle {
+  color: #eee;
+}
+main #download h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+}
+main #download ul {
+  display: flex;
+  justify-content: center;
+}
+main #download ul li {
+  margin: 10px auto;
+  font-size: 18px;
+}
+main #download ul li a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: block;
+  max-width: 80px;
+}
+.logo svg {
+  width: 100%;
+  height: auto;
+}
+.logo svg path {
+  fill: #fff;
+}
+footer {
+  background: #000;
+  color: white;
+  height: 35vh;
+}
+footer .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+footer.page-footer a {
+  text-align: center;
+}
+.webkit-show {
+  width: 100%;
+}
+.fa-audit {
+  max-width: 32px;
+}
+/* fix a bug that all of image is not showing on iphone */
+html:not(.mobile-true) .navbar-brand img,
+html:not(.mobile-true) footer .logo,
+html:not(.mobile-true) .webkit-show {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  #schematics {
+    height: auto !important;
+  }
+  footer {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .pc {
+    display: block !important;
+  }
+  .sp {
+    display: none !important;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    border-top: 1px solid;
+  }
+  .navbar .container {
+    justify-content: flex-end;
+  }
+  header video,
+  header .anim-img {
+    max-width: 600px;
+    transform: translate(-50%, -70%);
+  }
+}
+
+@media (max-width: 767px) {
+  .mask {
+    margin-top: 32px !important;
+  }
+  .mask .container-introduction {
+    left: 10%;
+    top: 50%;
+  }
+  .mask .container-introduction h1 {
+    font-size: 70px;
+  }
+  .navbar #button {
+    padding: 8px 20px;
+  }
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+  .loader-wrapper img {
+    width: 100%;
+  }
+}
